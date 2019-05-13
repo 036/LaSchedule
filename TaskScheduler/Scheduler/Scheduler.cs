@@ -7,9 +7,11 @@ namespace TaskScheduler.Scheduler
 {
     public class Scheduler
     {
+        private readonly List<Type> _events;
+
         public void Call<T>() where T : IBackgroundJob
         {
-
+            _events.Add(typeof(T));
         }
     }
 }
