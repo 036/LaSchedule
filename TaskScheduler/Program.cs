@@ -1,4 +1,4 @@
-﻿using System;
+﻿using TaskScheduler.Scheduler;
 
 namespace TaskScheduler
 {
@@ -6,7 +6,8 @@ namespace TaskScheduler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var taskSchedule = new TaskSchedule();
+            taskSchedule.RunSchedule();
         }
     }
 }

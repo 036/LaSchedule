@@ -5,13 +5,14 @@ using TaskScheduler.Scheduler.Jobs;
 
 namespace TaskScheduler.Scheduler
 {
-    public class TaskScheduler
+    public class TaskSchedule
     {
         public void RunSchedule()
         {
-            var scheduler = new Scheduler();
+            var scheduler = new ScheduleHandler();
 
             scheduler.Call<ConsoleWriterJob>();
+            scheduler.Call<FileWriterJob>();
         }
     }
 }

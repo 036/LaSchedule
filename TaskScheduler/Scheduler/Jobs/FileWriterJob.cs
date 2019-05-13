@@ -8,7 +8,7 @@ namespace TaskScheduler.Scheduler.Jobs
     {
         public void Handle()
         {
-            // Do some file write here...
+            Console.WriteLine("I should be writing files but here I am console writing...");
         }
     }
 }

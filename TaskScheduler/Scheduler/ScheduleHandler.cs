@@ -5,7 +5,7 @@ using TaskScheduler.Scheduler.Jobs;
 
 namespace TaskScheduler.Scheduler
 {
-    public class Scheduler
+    public class ScheduleHandler
     {
         private readonly List<Type> _events;
 
